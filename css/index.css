@@ -1,0 +1,450 @@
+.view .header {
+  display: flex;
+  background-color: #c91523;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.view .header .logo {
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.view .header .logo em {
+  width: 56px;
+  height: 20px;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-position: 0 -109.5px;
+  background-size: 200px;
+}
+.view .header .serach {
+  flex: 1;
+  padding: 5px;
+  overflow: hidden;
+}
+.view .header .serach input {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  text-indent: 28px;
+}
+.view .header .serach::after {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  content: '';
+  display: block;
+  width: 18.5px;
+  height: 18.5px;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-position: -60px -110px;
+  background-size: 200px;
+}
+.view .header .login {
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+.view .slider ul li a {
+  display: block;
+  width: 100%;
+}
+.view .slider ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .cat-servise {
+  flex: 1;
+}
+.view .cat-servise ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+}
+.view .cat-servise ul li a {
+  display: block;
+  padding: 5px;
+}
+.view .cat-servise ul li a img {
+  width: 50%;
+  margin: 0 auto;
+}
+.view .line {
+  height: 10px;
+  background-color: #f5f5f5;
+}
+.view .kill-sell .kill-title .clock {
+  position: absolute;
+  left: 12px;
+  width: 17px;
+  height: 21.5px;
+  background: url(../images/jd-sprites.png) no-repeat -84.5px -109.5px;
+  background-size: 200px;
+}
+.view .kill-sell .kill-title .kill-hand {
+  margin-left: 40px;
+  font-size: 16px;
+  color: #c91523;
+}
+.view .kill-sell .kill-title .time {
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+.view .kill-sell .kill-title .time span {
+  padding: 0 2px;
+  background-color: #3d3d3d;
+  font-size: 16px;
+  color: #ffffff;
+}
+.view .kill-sell .kill-title .time span:nth-child(3n) {
+  background-color: #ffffff;
+  color: #3d3d3d;
+}
+.view .kill-sell .kill-title .kill-more {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 14px;
+}
+.view .kill-sell .kill-list ul li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+.view .kill-sell .kill-list ul li a {
+  position: relative;
+  text-align: center;
+}
+.view .kill-sell .kill-list ul li a img {
+  width: 90%;
+  margin-top: 15px;
+}
+.view .kill-sell .kill-list ul li a span {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 46px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: #fdb60a;
+  font-size: 14px;
+  color: #fff;
+}
+.view .kill-sell .kill-list ul li a .new-price {
+  font-size: 14px;
+  color: #c91523;
+}
+.view .kill-sell .kill-list ul li a .old-price del {
+  font-size: 14px;
+  color: #666;
+}
+.view .coupon {
+  flex: 1;
+}
+.view .coupon img {
+  display: block;
+  width: 100%;
+}
+.view .coupon ul {
+  position: absolute;
+  bottom: 5px;
+}
+.view .coupon ul li {
+  float: left;
+  width: 50%;
+}
+.view .coupon ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.view .coupon ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .activity {
+  flex: 1;
+}
+.view .activity ul li {
+  float: left;
+  width: 50%;
+}
+.view .activity ul li:nth-child(-n+3) {
+  width: 33.333%;
+}
+.view .activity ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .advertising {
+  flex: 1;
+  padding: 5px;
+}
+.view .advertising img {
+  display: block;
+  width: 100%;
+}
+.view .supermarket {
+  flex: 1;
+}
+.view .supermarket .supermarket-title h3 {
+  font-size: 16px;
+  color: #c91523;
+  padding: 3px 5px;
+}
+.view .supermarket ul li {
+  float: left;
+  width: 50%;
+}
+.view .supermarket ul li:nth-child(4) {
+  clear: both;
+}
+.view .supermarket ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.view .supermarket ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .theme-sell {
+  flex: 1;
+}
+.view .theme-sell .theme-title h3 {
+  font-size: 16px;
+  color: #c91523;
+  padding: 3px 5px;
+}
+.view .theme-sell ul li {
+  float: left;
+  width: 25%;
+}
+.view .theme-sell ul li:nth-child(-n+2) {
+  width: 50%;
+}
+.view .theme-sell ul li:nth-child(5) {
+  clear: both;
+}
+.view .theme-sell ul li a {
+  display: block;
+}
+.view .theme-sell ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .recommend {
+  flex: 1;
+}
+.view .recommend .theme-title h3 {
+  font-size: 16px;
+  color: #c91523;
+  padding: 3px 5px;
+}
+.view .recommend ul li {
+  float: left;
+}
+.view .recommend ul li:nth-child(1) {
+  width: 40%;
+}
+.view .recommend ul li:nth-child(2) {
+  width: 30%;
+}
+.view .recommend ul li:nth-child(3) {
+  width: 30%;
+}
+.view .recommend ul li a img {
+  display: block;
+  width: 100%;
+}
+.view .guess-like {
+  flex: 1;
+}
+.view .guess-like .guess-title {
+  padding: 3px 5px;
+}
+.view .guess-like .guess-title h3 {
+  float: left;
+  font-size: 16px;
+  color: #c91523;
+  padding: 3px 5px;
+}
+.view .guess-like .guess-title a {
+  float: right;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #c91523;
+}
+.view .guess-like .guess-title a img {
+  display: inline-block;
+  width: 18px;
+  height: 100%;
+}
+.view .guess-like .guess-list ul li {
+  float: left;
+  width: 50%;
+  padding: 10px 10px 0;
+}
+.view .guess-like .guess-list ul li .list-top span {
+  font-size: 16px;
+  color: #c91523;
+}
+.view .guess-like .guess-list ul li .list-top a {
+  float: right;
+  display: block;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  color: #666;
+}
+.view .guess-like .guess-list ul li .list-bottom {
+  border-bottom: 1px solid #ccc;
+}
+.view .guess-like .guess-list ul li .list-bottom a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.view .guess-like .guess-list ul li .list-bottom a img {
+  display: block;
+  width: 100%;
+}
+.view .guess-like .guess-list ul li .list-bottom .list-text {
+  display: block;
+  font-size: 14px;
+  height: 29px;
+  overflow: hidden;
+}
+.view .more {
+  background-color: #f3f5f7;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  border-top: 1px solid #ccc;
+}
+.view .more a {
+  font-size: 14px;
+  color: #666;
+}
+.view .footer {
+  background-color: #f3f5f7;
+}
+.view .footer .direct {
+  padding: 10px;
+  color: #666;
+  border-top: 1px solid #ccc;
+}
+.view .footer .direct a {
+  display: block;
+  width: 24%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid #000;
+}
+.view .footer .direct a:last-child {
+  border: none;
+}
+.view .footer .app_icon {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.view .footer .app_icon .app {
+  display: block;
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .app_icon .app span:first-child {
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin: 0 auto;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-size: 200px;
+  background-position: -120px -70px;
+}
+.view .footer .app_icon .app span:last-child {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .app_icon .touch {
+  display: block;
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .app_icon .touch span:first-child {
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin: 0 auto;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-size: 200px;
+  background-position: -40px -70px;
+}
+.view .footer .app_icon .touch span:last-child {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .app_icon .pc {
+  display: block;
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .app_icon .pc span:first-child {
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin: 0 auto;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-size: 200px;
+  background-position: -80px -70px;
+}
+.view .footer .app_icon .pc span:last-child {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+.view .footer .copyright {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding: 20px;
+}
+.view .footer-nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.view .footer-nav a {
+  float: left;
+  width: 20%;
+}
+.view .footer-nav a img {
+  width: 100%;
+}
